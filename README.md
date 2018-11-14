@@ -1,3 +1,3 @@
-# Objektorienteeritud programmeerimine ?V3
+# Objektorienteeritud programmeerimine &Otilde;V3
 ## Teemad
-* Objekti t??p, objekti omadused ja meetodid
+* Objekti t&uuml;&uuml;p, objekti omadused ja meetodid
