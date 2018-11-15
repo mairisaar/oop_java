@@ -12,7 +12,7 @@ public class Ring {
     }
 
     public void pindala() {
-        Double s = 3.14 * raadius * raadius;
-        System.out.println(s);
+        Double ringiPindala = (Math.round(100 * (Math.PI * Math.pow(raadius, 2)))) / 100.0;
+        System.out.println("Selle ringi pindala on " + ringiPindala);
     }
 }
