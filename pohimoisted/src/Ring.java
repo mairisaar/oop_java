@@ -11,8 +11,14 @@ public class Ring {
         this.raadius = r;
     }
 
-    public void pindala() {
+    public Double pindala() {
         Double ringiPindala = (Math.round(100 * (Math.PI * Math.pow(raadius, 2)))) / 100.0;
-        System.out.println("Selle ringi pindala on " + ringiPindala);
+        return ringiPindala;
+    }
+
+    public void ringiKirjeldus() {
+        System.out.println("Antud ringi raadius on " + raadius);
+        Double ringiPindala = pindala();
+        System.out.println("Antud ringi pindala on " + ringiPindala);
     }
 }
