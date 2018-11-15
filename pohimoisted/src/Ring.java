@@ -7,8 +7,8 @@ public class Ring {
         this.raadius = 0.0;
     }
 
-    public Ring(Double raadius) {
-        this.raadius = raadius;
+    public Ring(Double r) {
+        this.raadius = r;
     }
 
     public void pindala() {
