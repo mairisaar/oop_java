@@ -10,6 +10,7 @@ public class Punkt {
         this.nimetus = nimetus;
         this.x = x;
         this.y = y;
+        this.setVeerand();
     }
 
     //setter
@@ -23,6 +24,6 @@ public class Punkt {
 
     //meetod
     public void valjastaKirjeldus() {
-        System.out.println("Punkt nimetusega " + this.nimetus + " koordinaatidega: (" + this.x + ";" + this.y + ") asub veerandil " + this.veerand);
+        System.out.println("Punkt nimetusega " + this.nimetus + " koordinaatidega: (" + this.x + ";" + this.y + ") asub " + this.veerand + ". veerandil");
     }
 }
