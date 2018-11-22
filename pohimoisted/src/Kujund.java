@@ -55,4 +55,8 @@ public class Kujund {
     public Integer getNurkadeArv() {
         return nurkadeArv;
     }
+
+    public Double getPindala() {
+        return pindala;
+    }
 }
