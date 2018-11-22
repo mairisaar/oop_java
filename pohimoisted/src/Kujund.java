@@ -7,6 +7,7 @@ public class Kujund {
 
     // klassi konstruktor
     public Kujund(String nimi) {
+        System.out.println("Kujund klassi konstruktor");
         this.nimetus = nimi;
     }
 
