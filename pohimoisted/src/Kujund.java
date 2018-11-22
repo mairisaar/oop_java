@@ -13,7 +13,7 @@ public class Kujund {
 
     //tüübi tegevused - klassi meetodid
     public void arvutaPindala() {
-        System.out.println("Kujund klassi arvutaPindala meetod");
+        System.out.println("Kujund klassi arvutaPindala() meetod");
     }
 
     public void valjastaKirjeldus() {
@@ -23,9 +23,21 @@ public class Kujund {
 
     }
 
+    //setterid
+
     public void setNimetus(String nimi) {
         this.nimetus = nimi;
     }
 
+    public void setNurkadeOlemasolu(Boolean nO) {
+        this.nurkadeOlemasolu = nO;
+    }
 
+    public void setNurkadeArv(Integer nA) {
+        this.nurkadeArv = nA;
+    }
+
+    public void setPindala(Double s) {
+        this.pindala = s;
+    }
 }
