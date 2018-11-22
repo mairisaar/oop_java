@@ -24,6 +24,6 @@ public class Punkt {
 
     //meetod
     public void valjastaKirjeldus() {
-        System.out.println("Punkt nimetusega " + this.nimetus + " koordinaatidega: (" + this.x + ";" + this.y + ") asub " + this.veerand + ". veerandil");
+        System.out.println("Punkt nimetusega " + this.nimetus + " koordinaatidega: (" + this.x + ";" + this.y + ") asub " + this.veerand + ". veerandis.");
     }
 }
