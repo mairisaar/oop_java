@@ -1,9 +1,9 @@
 public class Kujund {
     // tüübi omadused - klassi muutujad
-    public String nimetus;
-    public Double pindala;
-    public Boolean nurkadeOlemasolu;
-    public Integer nurkadeArv;
+    private String nimetus;
+    private Double pindala;
+    private Boolean nurkadeOlemasolu;
+    private Integer nurkadeArv;
 
     // klassi konstruktor
     public Kujund(String nimi) {
@@ -21,4 +21,10 @@ public class Kujund {
         System.out.println();
 
     }
+
+    public void setNimetus(String nimi) {
+        this.nimetus = nimi;
+    }
+
+
 }
