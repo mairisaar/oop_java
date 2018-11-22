@@ -19,5 +19,6 @@ public class Kujund {
         System.out.println(this.nimetus);
         this.arvutaPindala();
         System.out.println();
+
     }
 }
