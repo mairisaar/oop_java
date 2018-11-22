@@ -40,4 +40,19 @@ public class Kujund {
     public void setPindala(Double s) {
         this.pindala = s;
     }
+
+    // getterid
+
+
+    public String getNimetus() {
+        return nimetus;
+    }
+
+    public Boolean getNurkadeOlemasolu() {
+        return nurkadeOlemasolu;
+    }
+
+    public Integer getNurkadeArv() {
+        return nurkadeArv;
+    }
 }
