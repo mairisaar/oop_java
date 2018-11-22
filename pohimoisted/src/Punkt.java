@@ -22,6 +22,17 @@ public class Punkt {
         else this.veerand = 0;
     }
 
+    //getterid
+
+
+    public Double getX() {
+        return x;
+    }
+
+    public Double getY() {
+        return y;
+    }
+
     //meetod
     public void valjastaKirjeldus() {
         System.out.println("Punkt nimetusega " + this.nimetus + " koordinaatidega: (" + this.x + ";" + this.y + ") asub " + this.veerand + ". veerandis.");
