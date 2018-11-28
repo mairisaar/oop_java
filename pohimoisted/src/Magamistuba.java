@@ -6,6 +6,7 @@ public class Magamistuba {
         Sein sein4 = new Sein("ida");
         Lagi lagi = new Lagi(2.5, "valge");
         Voodi voodi = new Voodi("minuVoodi", 60, 2, 4, 1);
+        Lamp lamp = new Lamp("Kati", true);
 
         System.out.println(sein1.getSuund());
         System.out.println(sein2.getSuund());
@@ -15,6 +16,10 @@ public class Magamistuba {
         System.out.println("Lae värvus: " + lagi.getVarv());
 
         voodi.voodiLoomine();
+
+        lamp.lulita();
+        System.out.println("Nüüd saab magada.");
+        lamp.lulita();
     }
 
 
