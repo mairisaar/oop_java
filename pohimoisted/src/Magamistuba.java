@@ -5,6 +5,7 @@ public class Magamistuba {
         Sein sein3 = new Sein("lääs");
         Sein sein4 = new Sein("ida");
         Lagi lagi = new Lagi(2.5, "valge");
+        Voodi voodi = new Voodi("minuVoodi", 60, 2, 4, 1);
 
         System.out.println(sein1.getSuund());
         System.out.println(sein2.getSuund());
@@ -12,6 +13,8 @@ public class Magamistuba {
         System.out.println(sein4.getSuund());
         System.out.println("Lae kõrgus: " + lagi.getKorgus());
         System.out.println("Lae värvus: " + lagi.getVarv());
+
+        voodi.voodiLoomine();
     }
 
 
