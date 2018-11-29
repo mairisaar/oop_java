@@ -4,9 +4,9 @@ public class Printer {
     private Boolean kasKahepoolne;
 
     public Printer(Integer tooneriTase, Boolean kasKahepoolne) {
-        if (this.tooneriTase >= 0 & this.tooneriTase <= 100) {
+        if (tooneriTase >= 0 & tooneriTase <= 100) {
             this.tooneriTase = tooneriTase;
-        } else if (this.tooneriTase < 0) {
+        } else if (tooneriTase < 0) {
             this.tooneriTase = 0;
         } else {
             this.tooneriTase = 100;
@@ -64,20 +64,30 @@ public class Printer {
     }
 
     public Integer annaPrindi(Integer lehtedeArv) {
-        
         Integer paberiKulu = lehtedeArv;
         if (this.kasKahepoolne) {
             paberiKulu = lehtedeArv / 2 + lehtedeArv % 2;
             System.out.println("Prinditakse kahepoolselt.");
         }
-        this.pabereidPrinteris = this.pabereidPrinteris - paberiKulu;
-        return paberiKulu;
+        if (paberiKulu > pabereidPrinteris) {
+            System.out.println("Kahjuks ei jätku printimiseks paberit.");
+            System.out.println("Lisa juurde" + (paberiKulu - this.pabereidPrinteris) + " paberilehte");
+            return 0;
+        } else {
+            this.pabereidPrinteris = this.pabereidPrinteris - paberiKulu;
+            return paberiKulu;
+        }
     }
 
     public Integer getPabereidPrinteris() {
         return pabereidPrinteris;
     }
 
-
+    public Integer annaLisaPaber(Integer lehtedeArv) {
+        if (lehtedeArv > 0 & lehtedeArv < 500) {
+            this.pabereidPrinteris = this.pabereidPrinteris + lehtedeArv;
+        }
+        return this.pabereidPrinteris;
+    }
 }
 

@@ -1,8 +1,10 @@
 public class PrinterTest {
     public static void main(String[] args) {
-        Printer overall = new Printer(150, true);
+        Printer overall = new Printer(50, true);
 
         overall.setPabereidPrinteris(100);
+
+        overall.annaLisaPaber(10);
 
         System.out.println("Printeri tooneri tase on " + overall.getTooneriTase() + "%");
 
