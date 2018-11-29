@@ -1,27 +1,29 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 public class Printer {
     private Integer tooneriTase;
-    public Integer paberiArv;
+    private Integer pabereidPrinteris;
     private Boolean kasKahepoolne;
 
     public Printer(Integer tooneriTase, Boolean kasKahepoolne) {
         this.tooneriTase = tooneriTase;
         this.kasKahepoolne = kasKahepoolne;
-        this.paberiArv = 100;
+        this.pabereidPrinteris = 100;
+    }
+
+    public void setPabereidPrinteris(Integer pabereidPrinteris) {
+        this.pabereidPrinteris = pabereidPrinteris;
     }
 
     public void prindi(Integer lehed) {
-        System.out.println("Paberite arv enne printimist: " + this.paberiArv);
+        System.out.println("Paberite arv enne printimist: " + this.pabereidPrinteris);
 
-        if (paberiArv >= lehed) {
-            this.paberiArv -= lehed;
-            System.out.println("Paberite arv pärast printimist: " + this.paberiArv);
+        if (pabereidPrinteris >= lehed) {
+            this.pabereidPrinteris -= lehed;
+            System.out.println("Paberite arv pärast printimist: " + this.pabereidPrinteris);
         } else {
-            if (lehed - paberiArv == 1) {
-                System.out.println("Prinditi " + paberiArv + " lehte. Printimata jäi " + (lehed - paberiArv) + " leht. Lisa printerisse paberit!");
+            if (lehed - pabereidPrinteris == 1) {
+                System.out.println("Prinditi " + pabereidPrinteris + " lehte. Printimata jäi " + (lehed - pabereidPrinteris) + " leht. Lisa printerisse paberit!");
             } else {
-                System.out.println("Prinditi " + paberiArv + " lehte. Printimata jäi " + (lehed - paberiArv) + " lehte. Lisa printerisse paberit!");
+                System.out.println("Prinditi " + pabereidPrinteris + " lehte. Printimata jäi " + (lehed - pabereidPrinteris) + " lehte. Lisa printerisse paberit!");
             }
         }
 
