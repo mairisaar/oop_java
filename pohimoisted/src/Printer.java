@@ -1,11 +1,11 @@
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 public class Printer {
-    public Double tooneriTase;
-    public Integer paberiArv;
-    public Boolean kasKahepoolne;
+    private Integer tooneriTase;
+    private Integer paberiArv;
+    private Boolean kasKahepoolne;
 
-    public Printer(Double tooneriTase, Integer paberiArv, Boolean kasKahepoolne) {
+    public Printer(Integer tooneriTase, Integer paberiArv, Boolean kasKahepoolne) {
         this.tooneriTase = tooneriTase;
         this.paberiArv = paberiArv;
         this.kasKahepoolne = kasKahepoolne;
@@ -13,13 +13,19 @@ public class Printer {
 
     public void prindi(Integer lehed) {
         System.out.println("Paberite arv enne printimist: " + this.paberiArv);
-        this.paberiArv -= lehed;
-        System.out.println("Paberite arv pärast printimist: " + this.paberiArv);
+        
+        if (paberiArv >= lehed) {
+            this.paberiArv -= lehed;
+            System.out.println("Paberite arv pärast printimist: " + this.paberiArv);
+        } else {
+            System.out.println("Prinditi " + paberiArv + " lehte. Printimata jäi " + (lehed - paberiArv) + " lehte. Lisa printerisse paberit!");
+        }
+
     }
 
     public void lisaTooner(Integer tooner) {
-        System.out.println("Tooneri tase enne täitmist on: " + this.tooneriTase);
+        System.out.println("Tooneri tase enne täitmist on: " + this.tooneriTase + "%");
         this.tooneriTase += tooner;
-        System.out.println("Uus tooneri tase on: " + this.tooneriTase);
+        System.out.println("Uus tooneri tase on: " + this.tooneriTase + "%");
     }
 }
