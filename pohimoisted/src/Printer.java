@@ -56,5 +56,19 @@ public class Printer {
             return -1;
         }
     }
+
+    public Integer annaPrindi(Integer lehtedeArv) {
+        Integer paberiKulu = lehtedeArv;
+        if (this.kasKahepoolne) {
+            paberiKulu = lehtedeArv / 2 + lehtedeArv % 2;
+            System.out.println("Prinditakse kahepoolselt.");
+        }
+        this.pabereidPrinteris = this.pabereidPrinteris - paberiKulu;
+        return paberiKulu;
+    }
+
+    public Integer getPabereidPrinteris() {
+        return pabereidPrinteris;
+    }
 }
 
