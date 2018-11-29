@@ -4,9 +4,12 @@ public class PrinterTest {
 
         overall.setPabereidPrinteris(45);
 
-        overall.prindi(22);
-        overall.lisaTooner(51);
+        System.out.println("Printeri tooneri tase on " + overall.getTooneriTase() + "%");
 
+        overall.prindi(22);
+        overall.lisaTooner(14);
+
+        System.out.println("Õpetaja meetodiga tooneri täitmine. Uus tooneri tase: " + overall.annaLisaTooner(20) + "%");
     }
 
 

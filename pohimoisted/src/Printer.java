@@ -13,14 +13,18 @@ public class Printer {
         this.pabereidPrinteris = pabereidPrinteris;
     }
 
+    public Integer getTooneriTase() {
+        return tooneriTase;
+    }
+
     public void prindi(Integer lehed) {
         System.out.println("Paberite arv enne printimist: " + this.pabereidPrinteris);
 
-        if (pabereidPrinteris >= lehed) {
+        if (this.pabereidPrinteris >= lehed) {
             this.pabereidPrinteris -= lehed;
             System.out.println("Paberite arv pärast printimist: " + this.pabereidPrinteris);
         } else {
-            if (lehed - pabereidPrinteris == 1) {
+            if (lehed - this.pabereidPrinteris == 1) {
                 System.out.println("Prinditi " + pabereidPrinteris + " lehte. Printimata jäi " + (lehed - pabereidPrinteris) + " leht. Lisa printerisse paberit!");
             } else {
                 System.out.println("Prinditi " + pabereidPrinteris + " lehte. Printimata jäi " + (lehed - pabereidPrinteris) + " lehte. Lisa printerisse paberit!");
@@ -31,7 +35,7 @@ public class Printer {
 
     public void lisaTooner(Integer tooner) {
         System.out.println("Tooneri tase enne täitmist on: " + this.tooneriTase + "%");
-        if (tooneriTase + tooner <= 100) {
+        if (this.tooneriTase + tooner <= 100) {
             this.tooneriTase += tooner;
             System.out.println("Uus tooneri tase on: " + this.tooneriTase + "%");
         } else {
@@ -40,4 +44,17 @@ public class Printer {
         }
 
     }
+
+    public Integer annaLisaTooner(Integer toonerJuurde) {
+        if (this.tooneriTase >= 0 & this.tooneriTase <= 100) {
+            if (this.tooneriTase + toonerJuurde > 100) {
+                return -1;
+            }
+            this.tooneriTase = this.tooneriTase + toonerJuurde;
+            return this.tooneriTase;
+        } else {
+            return -1;
+        }
+    }
 }
+
