@@ -4,9 +4,15 @@ public class Printer {
     private Boolean kasKahepoolne;
 
     public Printer(Integer tooneriTase, Boolean kasKahepoolne) {
-        this.tooneriTase = tooneriTase;
+        if (this.tooneriTase >= 0 & this.tooneriTase <= 100) {
+            this.tooneriTase = tooneriTase;
+        } else if (this.tooneriTase < 0) {
+            this.tooneriTase = 0;
+        } else {
+            this.tooneriTase = 100;
+        }
         this.kasKahepoolne = kasKahepoolne;
-        this.pabereidPrinteris = 100;
+        this.pabereidPrinteris = 0;
     }
 
     public void setPabereidPrinteris(Integer pabereidPrinteris) {
@@ -58,6 +64,7 @@ public class Printer {
     }
 
     public Integer annaPrindi(Integer lehtedeArv) {
+        
         Integer paberiKulu = lehtedeArv;
         if (this.kasKahepoolne) {
             paberiKulu = lehtedeArv / 2 + lehtedeArv % 2;
@@ -70,5 +77,7 @@ public class Printer {
     public Integer getPabereidPrinteris() {
         return pabereidPrinteris;
     }
+
+
 }
 

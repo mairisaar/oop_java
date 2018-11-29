@@ -1,6 +1,6 @@
 public class PrinterTest {
     public static void main(String[] args) {
-        Printer overall = new Printer(50, false);
+        Printer overall = new Printer(150, true);
 
         overall.setPabereidPrinteris(100);
 
