@@ -20,7 +20,7 @@ public class Lamp {
         return sisseLulitatud;
     }
 
-    public void setSisseLulitatud(Boolean sisseLulitatud) {
+    public void setLulitatud(Boolean sisseLulitatud) {
         this.sisseLulitatud = sisseLulitatud;
     }
 
