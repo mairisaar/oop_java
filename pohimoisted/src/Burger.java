@@ -53,6 +53,8 @@ public class Burger {
 
     public void koostaBurger() {
         System.out.println("Burger on koostatud.");
+        Double burgeriHindKokku = this.hind + this.lisand1Hind + this.lisand2Hind + this.lisand3Hind + this.lisand4Hind;
+        System.out.println("Burgeri hind kokku on " + burgeriHindKokku + " eurot.");
     }
 
     public String getSai() {

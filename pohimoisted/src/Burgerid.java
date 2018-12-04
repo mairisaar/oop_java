@@ -9,6 +9,8 @@ public class Burgerid {
 
         juustuBurger.valiLisand3("juust", 0.90);
 
+        juustuBurger.valiLisand4("kurk", 0.22);
+
         juustuBurger.koostaBurger();
 
     }

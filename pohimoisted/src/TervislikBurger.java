@@ -4,13 +4,12 @@ public class TervislikBurger extends Burger {
     private String tervislikLisand2;
     private Double tervislikLisand2Hind;
 
-    public TervislikBurger(String liha, Double hind) {
-        super(nimetus, liha, hind);
-        this.getSai() = "mustTeraleb";
+    public TervislikBurger(String nimetus, String liha, String sai, Double hind) {
+        super(nimetus, liha, sai, hind);
     }
 
     public Double valiTervislikLisand1(String tervislikLisand1, Double tervislikLisand1Hind) {
-        return (tervislikLisand1,tervislikLisand1Hind);
+        return tervislikLisand1Hind;
     }
 
     @Override
