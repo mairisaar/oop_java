@@ -44,8 +44,8 @@ public class Burger {
     }
 
     public Double valiLisand4(String lisand4, Double lisand4Hind) {
-        this.lisand1 = lisand4;
-        this.lisand1Hind = lisand4Hind;
+        this.lisand4 = lisand4;
+        this.lisand4Hind = lisand4Hind;
 
         System.out.println("Neljandaks lisandiks valiti " + this.lisand4);
         return this.lisand4Hind;
