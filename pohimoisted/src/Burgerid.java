@@ -14,4 +14,6 @@ public class Burgerid {
         juustuBurger.koostaBurger();
 
     }
+
+
 }

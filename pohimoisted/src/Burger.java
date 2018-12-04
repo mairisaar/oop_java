@@ -60,4 +60,40 @@ public class Burger {
     public String getSai() {
         return sai;
     }
+
+    public Double getHind() {
+        return hind;
+    }
+
+    public void setHind(Double hind) {
+        this.hind = hind;
+    }
+
+    public Double getLisand1Hind() {
+        return lisand1Hind;
+    }
+
+    public Double getLisand2Hind() {
+        return lisand2Hind;
+    }
+
+    public Double getLisand3Hind() {
+        return lisand3Hind;
+    }
+
+    public Double getLisand4Hind() {
+        return lisand4Hind;
+    }
+
+    public String getLiha() {
+        return liha;
+    }
+
+    public void setLiha(String liha) {
+        this.liha = liha;
+    }
+
+    public void setSai(String sai) {
+        this.sai = sai;
+    }
 }
