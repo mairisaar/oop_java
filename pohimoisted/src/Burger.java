@@ -52,6 +52,10 @@ public class Burger {
     }
 
     public void koostaBurger() {
-        
+        System.out.println("Burger on koostatud.");
+    }
+
+    public String getSai() {
+        return sai;
     }
 }
