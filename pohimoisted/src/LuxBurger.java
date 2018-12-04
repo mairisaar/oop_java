@@ -1,6 +1,9 @@
 public class LuxBurger extends Burger {
 
     public LuxBurger() {
+        this.setSai("suur kukkel");
+        this.setLiha("veisesteik");
+        this.setHind(5.20);
     }
 
     @Override

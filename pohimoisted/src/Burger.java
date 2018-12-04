@@ -19,6 +19,10 @@ public class Burger {
         this.hind = hind;
     }
 
+    public Burger() {
+
+    }
+
     public Double valiLisand1(String lisand1, Double lisand1Hind) {
         this.lisand1 = lisand1;
         this.lisand1Hind = lisand1Hind;
@@ -52,9 +56,9 @@ public class Burger {
     }
 
     public void koostaBurger() {
-        System.out.println("Burger on koostatud.");
+        System.out.println(getClass().getSimpleName() + " on koostatud.");
         Double burgeriHindKokku = this.hind + this.lisand1Hind + this.lisand2Hind + this.lisand3Hind + this.lisand4Hind;
-        System.out.println("Burgeri hind kokku on " + burgeriHindKokku + " eurot.");
+        System.out.println(getClass().getSimpleName() + " hind kokku on " + burgeriHindKokku + " eurot.");
     }
 
     public String getSai() {
